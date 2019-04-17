@@ -26,7 +26,7 @@ public class ProductController {
     //添加
     @RequestMapping("add")
     public String addProduct(Product product) throws Exception{
-
+        System.out.println("hello");
         productService.add(product);
         return "redirect:/view/search.jsp";
     }
